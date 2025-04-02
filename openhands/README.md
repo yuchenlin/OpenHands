@@ -14,7 +14,7 @@ The key classes in OpenHands are:
 * AgentController: initializes the Agent, manages State, and drive the main loop that pushes the Agent forward, step by step
 * State: represents the current state of the Agent's task. Includes things like the current step, a history of recent events, the Agent's long-term plan, etc
 * EventStream: a central hub for Events, where any component can publish Events, or listen for Events published by other components
-  * Event: an Action or Observeration
+  * Event: an Action or Observation
       * Action: represents a request to e.g. edit a file, run a command, or send a message
       * Observation: represents information collected from the environment, e.g. file contents or command output
 * Runtime: responsible for performing Actions, and sending back Observations
